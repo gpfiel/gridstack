@@ -1,0 +1,22 @@
+.grid-stack, body {
+  background-color: #198CBA;
+}
+
+.grid-stack-item-content {
+  text-align: center;
+}
+.red .grid-stack-item-content {
+  background-color: red;
+}
+
+.yellow .grid-stack-item-content {
+  background-color: yellow;
+}
+
+.green .grid-stack-item-content {
+  background-color: green;
+}
+
+.pink .grid-stack-item-content {
+  background-color: pink;
+}

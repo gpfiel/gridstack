@@ -1,5 +1,29 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+{{#grid-stack
+  options=(hash 
+    animate=true
+    column=12
+    row=12
+    float=true)
+  onChange=(action 'move')
+}}
+  {{#grid-stack-item
+     options=(hash x=0 y=0 width=3 height=2 autoPosition=false)
+     class="red"
+  }}
+    Widget #1
+  {{/grid-stack-item}}
+  {{#grid-stack-item
+     options=(hash x=3 y=0 width=3 height=2)
+     class="yellow"
+  }}
+    Widget #2
+  {{/grid-stack-item}}
+  {{#grid-stack-item
+     options=(hash x=6 y=0 width=6 height=4)
+     class="green"
+  }}
+    Widget #3
+  {{/grid-stack-item}}
+{{/grid-stack}}
 
 {{outlet}}
